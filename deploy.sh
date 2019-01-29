@@ -1,5 +1,5 @@
 docker build -t arnejenssen/multi-client:latest -t arnejenssen/multi-client:$SHA -f ./client/Dockerfile ./client
-docker build -t arnejenssen/multi-server:latest -t arnejenssen/multi-server:$SHA -f ./server/Dockerfile ./servver
+docker build -t arnejenssen/multi-server:latest -t arnejenssen/multi-server:$SHA -f ./server/Dockerfile ./server
 docker build -t arnejenssen/multi-worker:latest -t arnejenssen/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
 docker push arnejenssen/multi-client:latest
